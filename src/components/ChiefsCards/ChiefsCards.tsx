@@ -14,7 +14,7 @@ export const ChiefsCards = ({chief}: {chief:IChief}) => {
   return (
     <div className="chiefs-cards">
       <div>
-        <img className='chiefs-cards__img' src={chief.img} alt='SomeAlt' />
+        <img className='chiefs-cards__img' src={`${process.env.PUBLIC_URL}${chief.img}`} alt={chief.name} />
       </div>
       <div className="chief-cards__info">
         <h3 className="chiefs-cards__name">{ chief.name }</h3>
