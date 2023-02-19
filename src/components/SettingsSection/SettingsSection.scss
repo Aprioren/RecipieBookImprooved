@@ -1,0 +1,73 @@
+.setting-section{
+  margin-bottom: 3vw;
+};
+
+.option-container{
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px var(--shadow-color);
+  border-left: .5em solid var(--primary-color);
+  background-color: var(--background-lite);
+};
+
+.setting-section__title{
+  margin-bottom: .5em;
+  font-size: 1.75em;
+  color: var(--text-color);
+};
+
+.options-btn{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 50%;
+};
+
+.option{
+  height: 3.5em;
+  width: 3.5em;
+  box-shadow: 0 3px 6px var(--shadow-color);
+  border-radius: 50%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  cursor: pointer;
+};
+
+.light{
+  background-color: #fff;
+};
+
+.dark{
+  background-color: rgb(29,29,29);
+};
+
+.checked{
+  background-color: var(--primary-color);
+  cursor: pointer;
+};
+
+.icon-btn{
+  height: 2.5em;
+  width: 2.5em;
+};
+
+.fontSize-btn{
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #FFF;
+  font-size: 1em;
+};
+
+.fontSize-icon{
+  height: 1em;
+  width: 1em;
+  margin-left: 1em;
+}

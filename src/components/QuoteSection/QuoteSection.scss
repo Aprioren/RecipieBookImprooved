@@ -1,0 +1,24 @@
+.quote-section{
+  margin-bottom: 3vw;
+};
+
+
+.quote-text{
+  display: block;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  color: var(--text-color);
+  margin-bottom: .5em;
+  position: relative;
+};
+
+.quote-author{
+  color: var(--text-light);
+  text-align: right;
+}
+
+.quote-icon{
+  color: var(--primary-color);
+  font-size: 1.5em;
+  margin-right: .5em;
+}

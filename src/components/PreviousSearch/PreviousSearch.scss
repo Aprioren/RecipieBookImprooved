@@ -1,0 +1,60 @@
+@import '../../styles/partials/animation.scss';
+
+.previous-search {
+  display: block;
+};
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1em;
+  height: 35px;
+};
+
+.previous-search__title {
+  color: var(--text-color);
+  margin-bottom: .5em;
+};
+
+.search-item {
+  display: inline-block;
+  cursor: pointer;
+
+  padding: .5em 1em;
+  margin-right: .5em;
+  border-radius: 30px;
+
+  background-color: var(--primary-color);
+  color: #FFF;
+  box-shadow: 0 3px 6px var(--shadow-color);
+  transform: translateX(100%);
+  opacity: 0;
+
+  animation: calc(var(--animation-speed)* .5s) slideInRight forwards;
+  &:last-child{
+    margin-right: 0;
+  }
+};
+
+.search-box__btn {
+  height: 35px;
+  padding: 0.75em 1em;
+  margin: 0;
+
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #FFF;
+  box-shadow: 0 3px 6px var(--shadow-color);
+  border: none;
+  border-radius: 0 5px 5px 0;
+};
+
+.search-box__input {
+  min-width: 150px;
+  padding: 0 .5em;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  border: 1px solid #4d4d4d;
+  height: 35px;
+};

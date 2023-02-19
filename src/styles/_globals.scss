@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+body {
+    font-size: var(--font-size);
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-lite);
+};
+
+a {
+    text-decoration: none;
+};
+
+.container {
+    @media (max-width: 768px) {
+        padding-inline: 6vw;
+    }
+    @media (max-width: 480px) {
+        padding-inline: 3vw;
+    }
+
+    padding-inline: 12vw;
+};
+
+.main{
+    padding-block: 3vh;
+};
+
+img{
+    object-fit: cover;
+};

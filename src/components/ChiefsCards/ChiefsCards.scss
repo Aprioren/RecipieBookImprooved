@@ -1,0 +1,81 @@
+.chiefs-cards{
+  display: flex;
+  height: 120px;
+  background-color:var(--background-color);
+  border-radius: 5px;
+  overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    box-shadow: 0 5px 10px var(--shadow-color);
+  };
+};
+
+.chiefs-cards__img{
+  height: 100%;
+  width: 120px;
+  border-radius: 5px;
+};
+
+.chief-cards__info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 100%;
+  padding-left: 1em;
+
+  // @media screen and (min-width: 768px) {
+  //   box-shadow: 0 3px 6px var(--shadow-color);
+  // }
+};
+
+.chiefs-cards__name{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--text-color);
+};
+
+.chiefs-cards__recipie{
+  font-size: 1.2em;
+  color: var(--text-light);  
+}
+
+.chiefs-cards__cuisine{
+  font-size: 1.2em;
+  color: var(--text-light);
+};
+
+.chiefs-cards__icons{
+  font-size: 1.2em;
+};
+
+.chiefs-cards__icon{
+  margin-right: .5em;
+  &:nth-child(1) {
+    color: #0063f7;
+  }
+
+  &:nth-child(3) {
+    color: #13b4ff;
+  }
+
+  &:nth-child(2) {
+    color: #ff0056;
+  }
+};
+
+.chiefs-cards__facebook{
+  margin-right: .5em;
+  color: #0063f7
+};
+
+
+.chiefs-cards__twitter{
+  margin-right: .5em;
+  color: #13b4ff;
+};
+
+.chiefs-cards__instagram{
+  margin-right: .5em;
+  color:#ff0056;
+};
