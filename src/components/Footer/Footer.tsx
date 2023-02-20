@@ -2,16 +2,27 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-export const Footer = () => {
+interface FooterProps {
+  appInfo: string;
+  facebookLink: string;
+  instagramLink: string;
+  twitterLink: string;
+}
+
+export const Footer:React.FC<FooterProps> = ({
+  appInfo,
+  facebookLink,
+  instagramLink,
+  twitterLink,
+}) => {
   return (
     <footer className='footer container'>
       <div className="footer-section">
         <a href="/" className="label">
           Recipie b<span className='label-span'>oo</span>k.com
         </a>
-        <p className='footer-info'>Recipie book це місце де ти можеш вільно створювати, зберігати, і знаходити рецепти
-          для того щоб порадувати сім'ю і знайомих. Експерементуй, отримуй позитивні відгуки, ділись
-          і будь собою з Recipie book.
+        <p className='footer-info'>
+          {appInfo}
         </p>
         <p className="footer__rights">&copy; 2023 | All Rights reserved</p>
       </div>
@@ -31,13 +42,13 @@ export const Footer = () => {
       </div>
       <div className="footer-socials">
         <p className="socials">Socials</p>
-        <a  href='https://www.facebook.com/' className='chiefs-cards__facebook'>
+        <a  href={facebookLink} className='chiefs-cards__facebook'>
           <FontAwesomeIcon icon={faFacebook}/>
         </a>
-        <a href="https://www.instagram.com/" className='chiefs-cards__instagram'>
+        <a href={instagramLink} className='chiefs-cards__instagram'>
           <FontAwesomeIcon icon={faInstagram} />
         </a>
-        <a href="https://twitter.com/" className='chiefs-cards__twitter'>
+        <a href={twitterLink} className='chiefs-cards__twitter'>
           <FontAwesomeIcon icon={faTwitter}/>
         </a>
       </div>

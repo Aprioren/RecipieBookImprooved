@@ -1,18 +1,11 @@
 import React from 'react';
 import  { HeroGallery } from '../HeroGallery/HeroGallery';
-export const Hero = () => {
-    const images = [
-        '/img/hero-gallery/canape.jpg',
-        '/img/hero-gallery/pancakes.jpg',
-        '/img/hero-gallery/pancakes-strawberry.jpg',
-        '/img/hero-gallery/pasta-chease.jpg',
-        '/img/hero-gallery/pasta.jpg',
-        '/img/hero-gallery/platter.jpg',
-        '/img/hero-gallery/salmon.jpg',
-        '/img/hero-gallery/vegetables.jpg',
-        '/img/hero-gallery/waffle-hearts.jpg',
-    ];
 
+interface Dishes{
+    dishes: string[],
+}
+
+export const Hero: React.FC<Dishes> = ({dishes}) => {
     return (
         <div className='hero'>
             <div className='hero__column'>
@@ -24,7 +17,7 @@ export const Hero = () => {
                 <button className='hero__btn'>Переглянути зараз</button>
             </div>
             <div className='hero__column gallery'>
-                {images.map((src, index: number) => {
+                {dishes.map((src, index: number) => {
                     return <HeroGallery  imgSrc={src} pt={'90%'} key={index}/>
                 })}
             </div>

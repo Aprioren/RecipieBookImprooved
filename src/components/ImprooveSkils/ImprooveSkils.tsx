@@ -1,14 +1,10 @@
 import React from 'react';
 
-export const ImprooveSkils = () => {
-  const skills = [
-    "Дізнавайся нові рецепти",
-    "Експерементуй з їжею",
-    "Створюй свої власні рецепти",
-    "Ніколи не загубиш серед лахміття",
-    "Дізнавайся секрети приготувань",
-    "Оцінюй рецепти"
-  ]
+interface ISkills{
+  skills: string[];
+};
+
+export const ImprooveSkils:React.FC<ISkills> = ({skills}) => {
 
   return (
     <div className="improove-skils">
@@ -20,7 +16,6 @@ export const ImprooveSkils = () => {
         {skills.map((skill, index) => {
           return <p className='skills-item' key={index}>{ skill }</p>
         })}
-
         <button className='improove-skils__btn'>Зареєструватися</button>
       </div>
     </div>

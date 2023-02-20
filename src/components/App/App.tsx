@@ -7,7 +7,7 @@ import { Recipies } from '../pages/Recipies';
 import { AddPage } from '../pages/AddPage';
 import { Settings } from '../pages/Settings';
 
-function App() {
+export const App: React.FC = () =>{
   return (
     <>
       <Navbar />
@@ -19,9 +19,14 @@ function App() {
           <Route path='/settings' element={ <Settings />}/>
         </Routes>
       </div>
-      <Footer />
+      <Footer 
+      appInfo={
+      "Recipie book це місце де ти можеш вільно створювати, зберігати, і знаходити рецептидля того щоб порадувати сім'ю і знайомих. Експерементуй, отримуй позитивні відгуки, ділисьі будь собою з Recipie book."
+      }
+      facebookLink = {"https://www.facebook.com/"}
+      instagramLink = {"https://www.instagram.com/"}
+      twitterLink= {"https://twitter.com/"}
+      />
     </>
   );
-}
-
-export default App;
+};

@@ -2,10 +2,8 @@ import React from 'react';
 import { PreviousSearch } from '../PreviousSearch/PreviousSearch';
 import { RecipieCard } from '../RecipieCard/RecipieCard';
 
-//title = Попередні запити
-
-export const Recipies = () => {
-   const recipies = [
+export const Recipies:React.FC = () => {
+  const recipies =  [
     {
       title: 'Домашні сирні палочки',
       image: `/img/recipies-img/chiese-wands.jpg`,
@@ -60,8 +58,7 @@ export const Recipies = () => {
       authorImg: '/img/chief-cook-img/cook_1.jpg',
       description:"По-перше, це може стати не тільки швидкою, а й ситною вечерею. По-друге, ви можете використовувати залишки макаронів після сніданку чи обіду. По-третє, в ці запіканки можна додати і м'ясо з овочами, і сосиски, і гриби з сиром",
     },
-  ].sort(() => Math.random() - 0.5);
-
+  ]
   return (
     <>
       <PreviousSearch title={'Попередні запити'} />
@@ -73,3 +70,4 @@ export const Recipies = () => {
     </>
   )
 };
+// .sort(() => Math.random() - 0.5);
