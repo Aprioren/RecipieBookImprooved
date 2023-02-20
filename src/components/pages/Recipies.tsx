@@ -8,66 +8,67 @@ export const Recipies = () => {
    const recipies = [
     {
       title: 'Домашні сирні палочки',
-      image: 'img/recipies-img/chiese-wands.jpg',
-      authorImg: 'img/chief-cook-img/cook_9.jpg',
+      image: `/img/recipies-img/chiese-wands.jpg`,
+      authorImg: '/img/chief-cook-img/cook_9.jpg',
       description: 'Секрет приготування ідеальної закуски з сиру всього за 10 хвилин. Всі тонкощі приготування. Можна заморожувати і мати в заготівлі смачний сир в паніровці. Хрусткі сирні палички — нескінченно тягнеться смажений сир фрі в домашніх умовах. По-справжньому смачно!',
     },
     {
       title: 'Драники з картоплі',
-      image: 'img/recipies-img/dranik.jpg',
-      authorImg: 'img/chief-cook-img/cook_8.jpg',
+      image: `/img/recipies-img/dranik.jpg`,
+      authorImg: '/img/chief-cook-img/cook_8.jpg',
       description:'Деруни, драники або тертюхи (від слова "дерти") — оладки з тертої картоплі, яєць і борошна, які традиційно смажать на сковороді з використанням рослинної олії. До дерунів зазвичай додають трохи цибулі, часнику, спеції, подають зі сметаною або підливою на її основі.',
     },
     {
       title: 'Піцца на сковорідці за 10 хвилин',
-      image: 'img/recipies-img/pizza-on-table.jpg',
-      authorImg: 'img/chief-cook-img/cook_7.jpg',
+      image: `/img/recipies-img/pizza-on-table.jpg`,
+      authorImg: '/img/chief-cook-img/cook_7.jpg',
       description:"Цей рецепт може похвалитися своєю оригінальністю і досить швидким приготуванням. Приготована за таким рецептом швидка піца на сковороді буде соковитою і дуже ніжною",
     },
     {
       title: 'Картопля, тушенна з куркою в сметанно-сливочному соусі',
-      image: 'img/recipies-img/potato-in-milk.jpg',
-      authorImg: 'img/chief-cook-img/cook_6.jpg',
+      image: `/img/recipies-img/potato-in-milk.jpg`,
+      authorImg: '/img/chief-cook-img/cook_6.jpg',
       description:"Ніжне куряче м’ясо, запечене або тушковане в сметанному соусі – відмінний варіант для ситного обіду і вечері. Ці продукти не тільки гармонійно поєднуються між собою, але і легко засвоюються організмом, так що підійдуть навіть тим, хто дотримується дієти.",
     },
     {
       title: 'Ліниві хачапурі (сирні коржики)',
-      image: 'img/recipies-img/chiese-hachapury.jpg',
-      authorImg: 'img/chief-cook-img/cook_5.jpg',
+      image: `/img/recipies-img/chiese-hachapury.jpg`,
+      authorImg: '/img/chief-cook-img/cook_5.jpg',
       description:"Сирний коржик за смаком нагадує хачапурі, але готується набагато швидше. Простий рецепт ситного сніданку допоможе зарядитися енергією на весь день",
     },
     {
       title: 'Паста "Карбонара"',
-      image: 'img/recipies-img/pasta-karbonara.jpg',
-      authorImg: 'img/chief-cook-img/cook_4.jpg',
+      image: `/img/recipies-img/pasta-karbonara.jpg`,
+      authorImg: '/img/chief-cook-img/cook_4.jpg',
       description:"Напевно, ви не раз чули про таку страву як паста карбонара, а якщо пощастило, то і куштували цей дивовижний витвір італійської кухні. У цій статті ми розповімо про те, як приготувати пасту карбонара самостійно — це не так складно, як може здатися на перший погляд",
     },
     {
       title: 'Рис з овочами й яйцами (на пательні)',
-      image: 'img/recipies-img/rice.jpg',
-      authorImg: 'img/chief-cook-img/cook_3.jpg',
+      image: `/img/recipies-img/rice.jpg`,
+      authorImg: '/img/chief-cook-img/cook_3.jpg',
       description:"В якості гарніру у нас часто виступає картопляне пюре, макарони або різноманітні каші. Спробуйте приготувати рис з овочами на сковороді і стандартні доповнення до м’ясних страв підуть на другий план.",
     },
     {
       title: 'Корн-догі',
-      image: 'img/recipies-img/corn-dogy.jpg',
-      authorImg: 'img/chief-cook-img/cook_2.jpg',
+      image: `/img/recipies-img/corn-dogy.jpg`,
+      authorImg: '/img/chief-cook-img/cook_2.jpg',
       description:"Корн-доги - це щось типу сосиски в тісті у стилі кукурудзи!=))) Дуже ситні закуски для малих і великих посиденьок з друзями, легкі в приготуванні і трохи незвичні на смак, за рахунок використання кукурудзяного борошна.",
     },
     {
       title: 'Запіканка з макарон з курицею й помідорами',
-      image: 'img/recipies-img/zapekanka.jpg',
-      authorImg: 'img/chief-cook-img/cook_1.jpg',
+      image: `/img/recipies-img/zapekanka.jpg`,
+      authorImg: '/img/chief-cook-img/cook_1.jpg',
       description:"По-перше, це може стати не тільки швидкою, а й ситною вечерею. По-друге, ви можете використовувати залишки макаронів після сніданку чи обіду. По-третє, в ці запіканки можна додати і м'ясо з овочами, і сосиски, і гриби з сиром",
     },
   ].sort(() => Math.random() - 0.5);
+
   return (
     <>
       <PreviousSearch title={'Попередні запити'} />
       <div className='recipies-container'>
         {recipies.map((recipie, index)=>(
           <RecipieCard  recipie={recipie} key={index}/>
-        ))};
+        ))}
       </div>
     </>
   )

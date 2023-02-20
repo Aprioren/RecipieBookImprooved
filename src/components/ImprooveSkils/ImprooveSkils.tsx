@@ -13,7 +13,7 @@ export const ImprooveSkils = () => {
   return (
     <div className="improove-skils">
       <div className='improove-skils__column'>
-        <img className='improove-skils-img' src="/img/hero-gallery/vegetables.jpg" alt="waffle-hearts" />
+        <img className='improove-skils-img' src={`${process.env.PUBLIC_URL}${"/img/hero-gallery/vegetables.jpg"}`} alt="waffle-hearts" />
       </div>
       <div className='improove-skils__column'>
         <h2 className='improove-skils__title'>Вдосконалюйся</h2>
